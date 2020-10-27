@@ -25,9 +25,11 @@ public class StartAnimationButton : MonoBehaviour
 
         if (playFloor == transform.position){
             anim.enabled = true;
-			f = GlowObject.getIntensity();
-			Color color = Color.red * f;
-			GlowObject.renderer.material.SetColor("_EmissionColor", color);
+			
+			Color color = Color.green;
+			float f = 0.4f; 
+			GlowObject.GetComponent<Renderer>().material.SetColor("_EmissionColor",color*f);
+			 
         }     
 
     }
