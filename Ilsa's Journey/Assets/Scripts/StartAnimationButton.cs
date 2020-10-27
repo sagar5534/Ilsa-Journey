@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonPressed : MonoBehaviour
+public class StartAnimationButton : MonoBehaviour
 {
 
     Animator anim;
+	public GameObject animObject; 
 
     // Start is called before the first frame update
     void Start()
     {   
-        anim = GameObject.Find("RotatingGO").GetComponent<Animator>();
+        anim = animObject.GetComponent<Animator>();
         anim.enabled = false;
     }
 
