@@ -7,6 +7,7 @@ public class StartAnimationButton : MonoBehaviour
 
     Animator anim;
 	public GameObject animObject; 
+	public GameObject GlowObject;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,9 @@ public class StartAnimationButton : MonoBehaviour
 
         if (playFloor == transform.position){
             anim.enabled = true;
+			f = GlowObject.getIntensity();
+			Color color = Color.red * f;
+			GlowObject.renderer.material.SetColor("_EmissionColor", color);
         }     
 
     }
