@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndButton : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class EndButton : MonoBehaviour
 
         if (playFloor == transform.position){
             //End Game
+			SceneManager.LoadScene("End");
         }    
     }
 }

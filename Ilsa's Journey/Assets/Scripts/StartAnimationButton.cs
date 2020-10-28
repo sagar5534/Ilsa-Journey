@@ -8,6 +8,7 @@ public class StartAnimationButton : MonoBehaviour
     Animator anim;
 	public GameObject animObject; 
 	public GameObject GlowObject;
+	public Light lt;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,8 @@ public class StartAnimationButton : MonoBehaviour
 			Color color = Color.green;
 			float f = 0.4f; 
 			GlowObject.GetComponent<Renderer>().material.SetColor("_EmissionColor",color*f);
+			
+			lt.color = Color.green;
 			 
         }     
 
