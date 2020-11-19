@@ -19,7 +19,7 @@ public class EndButton : MonoBehaviour
 
         if (playFloor == transform.position){
             //End Game
-			SceneManager.LoadScene("End");
+			SceneManager.LoadScene("StartScreen");
         }    
     }
 }
