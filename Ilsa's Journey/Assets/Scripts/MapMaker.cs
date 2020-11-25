@@ -65,7 +65,7 @@ public class MapMaker : MonoBehaviour {
 
 			GameObject player = GameObject.Find ("Player");
 			//player.transform.position = new Vector3(mapData.PlayerStart.x, mapData.PlayerStart.y + 1, mapData.PlayerStart.z);
-			player.transform.position = new Vector3(5, 1, 5);
+			//player.transform.position = new Vector3(5, 1, 5);
 			player.GetComponent<MoveCharacter>().Init();
 			
 	}
